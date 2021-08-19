@@ -1,15 +1,153 @@
-@media (max-width: 1200px) {
+@media (min-width: 1700px) {
+	.main {
+		&__img {
+			left: 750px;
+		}
+	}
+}
+@media (min-width: 1900px) {
+	.main {
+		&__img {
+			left: 900px;
+		}
+	}
+}
 
+@media (max-width: 1450px) {
+	.header {
+		margin: 25px 20px 50px;
+		// &__link {
+		// 	padding-right: 30px;
+		// }
+	}
+	.main {
+		&__img {
+			left: 400px;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.container {
+		max-width: 960px;
+	}
+	.header {
+		max-width: 960px;
+		margin: 25px auto 50px;
+		&__menu {
+			margin-left: 50px;
+		}
+		&__link {
+			padding-right: 15px;
+		}
+		&__sing {
+			margin-right: 25px;
+		}
+	}
+	.main {
+		margin: 130px 0 140px;
+		&__title {
+			font-size: 46px;
+			line-height: 55px;
+		}
+		&__subtitle {
+			line-height: 26px;
+		}
+		&__img {
+			left: 390px;
+			top: -70px;
+			max-width: 60%;
+		}
+	}
+	.btn {
+		width: 130px;
+		height: 50px;
+		&_green {
+			width: 150px;
+			height: 55px;
+		}
+	}
+	.result {
+		&__title {
+			line-height: 48px;
+		}
+	}
+	.downloads__title, .rating__title {
+		font-size: 58px;
+    line-height: 63px;
+	}
+	.downloads__subtitle, .rating__subtitle {
+		line-height: 26px;
+	}
+	.features {
+		margin-top: 100px;
+		&__block {
+			margin-bottom: 85px;
+		}
+		&__title {
+			font-size: 46px;
+			line-height: 60px;
+		}
+		&__subtitle {
+			line-height: 28px;
+		}
+		&__header {
+			line-height: 27px;
+		}
+		&__text {
+			line-height: 24px;
+		}
+		&__more {
+			margin-top: 25px;
+		}
+	}
 }
 
 @media (max-width: 992px) {
+	.container {
+		max-width: 720px;
+	}
+	.header {
+		&__menu {
+			display: none;
+		}
+	}
+	.hamburger {
+		display: block;
+		margin-left: 20px;
+		padding-top: 5px;
+		// height: 2.31px;
+		// position: absolute;
+		// left: 120px;
+		cursor: pointer;
+		// &:hover span {
+		// 	background: $main-color;
+		// 	transition: all 0.5s;
+		// }
+		&__span {
+			display: block;
+			height: 3px;
+			width: 48px;
+			margin-bottom: 5px;
+			background-color: #273551;
+			&_min {
+				float: right;
+				width: 33px;
+			}
+		}
+	}
 
 }
 
-@media (max-width: 768px) {
+// @media (max-width: 768px) {
+// 	.container {
+// 		max-width: 540px;
+// 	}
+// }
 
-}
-
-@media (max-width: 576px) {
-	
-}
+// @media (max-width: 576px) {
+// 	.container {
+// 		width: 100%;
+// 		padding: 0 10px;
+// 	}
+// }
