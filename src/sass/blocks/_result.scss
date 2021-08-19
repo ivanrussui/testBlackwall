@@ -1,0 +1,46 @@
+.result {
+	&__wrap {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__title {
+		font-weight: 600;
+		font-size: 36px;
+		line-height: 50px;
+		color: $main-color;
+		max-width: 494px;
+	}
+	&__number {
+		display: flex;
+		align-items: center;
+	}
+	&__company {
+		padding: 0 15px;
+		margin-top: 49px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.downloads, .rating {
+	margin-right: 93px;
+	&__title {
+		font-weight: bold;
+		font-size: 60px;
+		line-height: 70px;
+		letter-spacing: -1px;
+		color: $main-color;
+	}
+	&__img {
+		margin: 10px 0 12px;
+	}
+	&__subtitle {
+		font-size: 16px;
+		line-height: 28px;
+		color: $main-color;
+	}
+}
+.rating {
+	margin-right: 0;
+}
