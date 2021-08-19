@@ -1,0 +1,30 @@
+.main {
+	// display: flex;
+	position: relative;
+	&__title {
+		margin-top: 145px;
+		font-weight: 600;
+		font-size: 48px;
+		line-height: 60px;
+		/* or 125% */
+
+		/* navy blue */
+
+		color: $main-color;
+		max-width: 498px;
+	}
+	&__subtitle {
+		margin-top: 16px;
+		font-size: 17px;
+		line-height: 28px;
+		color: $main-color;
+		max-width: 484px;
+	}
+	&__img {
+		position: absolute;
+		max-width: 786px;
+		max-height: 518.35px;
+    left: 621px;
+    top: -94.24px;
+	}
+}

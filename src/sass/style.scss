@@ -8,15 +8,19 @@
 	font-family: 'Inter', sans-serif;
 }
 
+// body {
+// 	position: relative;
+// }
 
 .container {
 	width: 1140px;
 	margin: 0 auto;
 }
 
-@import 'blocks/title';
+// @import 'blocks/title';
 @import 'blocks/button';
 @import 'blocks/header';
+@import 'blocks/main';
 
 
 @import 'blocks/media';
