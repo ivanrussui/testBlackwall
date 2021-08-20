@@ -1,16 +1,10 @@
 .main {
-	// display: flex;
 	position: relative;
 	margin: 145px 0 253px;
 	&__title {
-		// margin-top: 145px;
 		font-weight: 600;
 		font-size: 48px;
 		line-height: 60px;
-		/* or 125% */
-
-		/* navy blue */
-
 		color: $main-color;
 		max-width: 498px;
 	}
@@ -29,13 +23,4 @@
     top: -94.24px;
 		z-index: -1;
 	}
-	// &__left {
-	// 	background: url(../img/bg.svg) no-repeat right -50px / 786px 518.35px;
-	// 	z-index: 11111;
-	// 	position: relative;
-	// 	// max-width: 100%;
-	// 	// background: url(../img/logo.svg) no-repeat center center / auto 100%;
-	// 	// background-image: url(../img/bg.svg);
-	// 	// background: url(../img/main_bg.svg) no-repeat 75% bottom/auto 100%;
-	// }
 }

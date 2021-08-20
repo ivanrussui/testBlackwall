@@ -16,9 +16,6 @@
 @media (max-width: 1450px) {
 	.header {
 		margin: 25px 20px 50px;
-		// &__link {
-		// 	padding-right: 30px;
-		// }
 	}
 	.main {
 		&__img {
@@ -82,8 +79,7 @@
 		line-height: 26px;
 	}
 	.features {
-		// margin-top: 100px;
-		margin: 100px auto 100px;
+		margin: 100px auto;
 		&__block {
 			margin-bottom: 85px;
 		}
@@ -112,24 +108,90 @@
 	}
 	.header {
 		margin: 25px 35px 40px;
+		&__close {
+			display: block;
+			position: relative;
+			right: 20px;
+			top: 25px;
+			width: 40px;
+			height: 40px;
+			cursor: pointer;
+			span {
+				display: block;
+				width: 40px;
+				height: 5px;
+				margin-bottom: 7px;
+				background-color: white;
+				&:first-child {
+					transform: translateY(17px) rotate(45deg);
+				}
+				&:last-child {
+					transform: translateY(5px) rotate(-45deg);
+				}
+			}
+		}
 		&__menu {
-			display: none;
+			display: flex;
+			flex-direction: column;
+			padding-top: 30px;
+		}
+		&__item {
+			padding-bottom: 20px;
+			margin-bottom: 10px;
+		}
+		&__link {
+			color: #fff;
+			font-size: 20px;
+		}
+		&__nav {
+			position: fixed;
+			top: -100%;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			z-index: 10;
+			visibility: hidden;
+			opacity: 0;
+			transition: all 0.7s;
 		}
 	}
+	.active {
+		top: 0;
+		visibility: visible;
+		opacity: 0.97;
+		background-color: $main-color;
+		display: flex;
+		justify-content: space-between;
+	}
+	.hamburger {
+		position: absolute;
+		left: 150px;
+		display: block;
+		padding-top: 5px;
+		cursor: pointer;
+		&__span {
+			display: block;
+			height: 3px;
+			width: 48px;
+			margin-bottom: 7.5px;
+			background-color: #273551;
+			&_min {
+				float: right;
+				width: 33px;
+			}
+		}
+	}
+
 	.main {
 		margin: 40px 0 60px;
 		&__left {
 			text-align: center;
-			// display: block;
-			// margin: 0 auto;
 		}
 		&__title {
 			margin: 0 auto;
-			// text-align: center;
 		}
 		&__subtitle {
 			margin: 20px auto auto auto;
-			// text-align: center;
 		}
 
 		&__img {
@@ -142,30 +204,7 @@
 			text-align: center;
 		}
 	}
-	.hamburger {
-		display: block;
-		margin-left: 20px;
-		padding-top: 5px;
-		// height: 2.31px;
-		// position: absolute;
-		// left: 120px;
-		cursor: pointer;
-		// &:hover span {
-		// 	background: $main-color;
-		// 	transition: all 0.5s;
-		// }
-		&__span {
-			display: block;
-			height: 3px;
-			width: 48px;
-			margin-bottom: 5px;
-			background-color: #273551;
-			&_min {
-				float: right;
-				width: 33px;
-			}
-		}
-	}
+
 	.result {
 		&__wrap {
 			flex-direction: column;
@@ -178,7 +217,6 @@
 		}
 		&__number {
 			margin-top: 22px;
-			// justify-content: space-between;
 		}
 		&__downloads {
 			margin-right: 75px;
@@ -188,7 +226,7 @@
 		}
 	}
 	.features {
-		margin: 50px auto 50px;
+		margin: 50px auto;
 		&__title {
 			font-size: 44px;
 			line-height: 49px;
@@ -218,15 +256,119 @@
 	}
 }
 
-// @media (max-width: 768px) {
-// 	.container {
-// 		max-width: 540px;
-// 	}
-// }
+@media (max-width: 768px) {
+	.container {
+		max-width: 540px;
+	}
+}
 
-// @media (max-width: 576px) {
-// 	.container {
-// 		width: 100%;
-// 		padding: 0 10px;
-// 	}
-// }
+@media (max-width: 576px) {
+	.container {
+		width: 100%;
+		padding: 0 10px;
+	}
+	.header {
+		margin: 26px 15px 40px;
+		&__right {
+			display: none;
+		}
+		&__hamburger {
+			left: auto;
+			right: 0px;
+		}
+		&__img img {
+			width: 25px;
+			height: 25px;
+		}
+		&__brand {
+			font-size: 19px;
+		}
+	}
+
+	.main {
+		&__title {
+			font-size: 28px;
+			line-height: 27px;
+		}
+		&__subtitle {
+			font-size: 14px;
+			line-height: 20px;
+			max-width: 280px;
+		}
+		&__img {
+			max-width: 350px;
+			max-height: 300px;
+		}
+	}
+	.btn {
+		&_green {
+			margin-top: 33px;
+			width: 120px;
+			height: 40px;
+			font-size: 14px;
+			line-height: 17px;
+		}
+	}
+	.result {
+		&__title {
+			font-size: 20px;
+			line-height: 30px;
+			text-align: left;
+			max-width: 330px;
+		}
+		&__company {
+			padding: 0;
+		}
+		&__img {
+			max-width: 19%;
+			&:nth-last-child(-n + 2) {
+				display: none;
+			}
+		}
+	}
+	.downloads,
+	.rating {
+		&__title {
+			font-size: 41px;
+			line-height: 34px;
+		}
+		&__subtitle {
+			line-height: 16px;
+			font-size: 14px;
+		}
+		&__img {
+			max-width: 12px;
+			margin: 10px 0;
+		}
+	}
+	.features {
+		&__title {
+			font-size: 24px;
+			line-height: 24px;
+		}
+		&__subtitle {
+			font-size: 14px;
+			line-height: 20px;
+			letter-spacing: -0.02em;
+		}
+		&__img {
+			max-height: 48px;
+		}
+		&__header {
+			font-size: 20px;
+			line-height: 24px;
+		}
+		&__text {
+			font-size: 14px;
+			line-height: 24px;
+		}
+	}
+}
+@media (max-width: 356px) {
+	.main {
+		&__img {
+			max-width: 300px;
+			max-height: 300px;
+		}
+	}
+}

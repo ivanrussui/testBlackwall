@@ -1,7 +1,5 @@
 .features {
-	// margin-top: 130px;
-	margin: 130px auto -130px;
-	// margin-bottom: 130px;
+	margin: 130px auto;
 	&__title {
 		text-align: center;
 		font-weight: 600;
@@ -25,10 +23,6 @@
 	}
 	&__block {
 		margin-bottom: 131px;
-	// 	margin-right: 80px;
-	// 	&:last-child  {
-	// 		margin-right: 0;
-	// 	}
 	}
 	&__header {
 		margin: 28px 0 14px;

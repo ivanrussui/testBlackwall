@@ -1,23 +1,21 @@
 @import 'libs/mynormalize';
 
-
 @import 'base/variables';
-// @import 'base/mixins';
+
 
 * {
 	font-family: 'Inter', sans-serif;
 }
 
-// body {
-// 	position: relative;
-// }
+body.lock {
+	overflow: hidden;
+}
 
 .container {
 	width: 1140px;
 	margin: 0 auto;
 }
 
-// @import 'blocks/title';
 @import 'blocks/button';
 @import 'blocks/header';
 @import 'blocks/main';
