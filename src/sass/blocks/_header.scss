@@ -5,7 +5,6 @@
 	align-items: center;
 	margin: 25px 110px 50px;
 	&__left {
-		
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -21,25 +20,48 @@
 		font-size: 20px;
 		line-height: 20px;
 		text-align: center;
-		color: #18216d;
+		color: $main-color;
+		&:hover {
+			color: $second-color;
+			transition: .3s all;
+		}
 	}
 	&__menu {
 		display: flex;
 		margin-left: 110px;
 	}
 	&__item {
+		padding-right: 60px;
 		&:last-child {
-			.header__link {
-				padding-right: 0;
-			}
+			padding-right: 0;
 		}
 	}
 	&__link {
-		padding-right: 60px;
+		position: relative;
+		// padding-right: 60px;
 		font-weight: 500;
 		font-size: 18px;
 		line-height: 20px;
 		color: $main-color;
+		&:hover {
+			color: $second-color;
+			transition: .3s all;
+			&:before {
+				opacity: 1;
+				bottom: -3px;
+			}
+		}
+		&::before {
+			content: "";
+			position: absolute;
+			height: 1px;
+			bottom: 0px;
+			left: 0;
+			width: 100%;
+			background-color: $second-color;
+			transition: 0.2s ease-in;
+			opacity: 0;
+		}
 	}
 	&__sing {
 		margin-right: 45px;
@@ -47,9 +69,12 @@
 		font-size: 18px;
 		line-height: 20px;
 		color: $main-color;
+		&:hover {
+			color: $second-color;
+			transition: .3s all;
+		}
 	}
 	&__close {
 		display: none;
 	}
 }
-

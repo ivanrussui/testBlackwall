@@ -34,7 +34,7 @@
 		&__menu {
 			margin-left: 50px;
 		}
-		&__link {
+		&__item {
 			padding-right: 15px;
 		}
 		&__sing {
@@ -116,6 +116,12 @@
 			width: 40px;
 			height: 40px;
 			cursor: pointer;
+			&:hover {
+				span {
+					background-color: $second-color;
+					transition: .3s all;
+				}
+			}
 			span {
 				display: block;
 				width: 40px;
@@ -169,6 +175,12 @@
 		display: block;
 		padding-top: 5px;
 		cursor: pointer;
+		&:hover {
+				span {
+					background-color: $second-color;
+					transition: .3s all;
+			}
+		}
 		&__span {
 			display: block;
 			height: 3px;
@@ -259,6 +271,41 @@
 @media (max-width: 768px) {
 	.container {
 		max-width: 540px;
+	}
+	.header {
+		&__brand:hover {
+			color: $main-color;
+		}
+		&__link:hover {
+			color: white;
+			// text-decoration: none;
+			&::before {
+				opacity: 0;
+			}
+		}
+		&__sing:hover {
+			color: $main-color;
+		}
+		&__close:hover {
+			span {
+				background-color: white;
+			}
+		}
+	}
+	.hamburger {
+		&:hover {
+			span {
+				background-color: #273551;
+		}
+		}		
+	}
+	.btn {
+		&:hover {
+			color: white;
+		}
+		&_green:hover {
+			color: $main-color;
+		}
 	}
 }
 

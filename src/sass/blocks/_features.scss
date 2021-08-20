@@ -1,5 +1,8 @@
 .features {
 	margin: 130px auto;
+	&__img {
+		animation: scale 1.6s infinite ease-in-out;
+	}
 	&__title {
 		text-align: center;
 		font-weight: 600;
